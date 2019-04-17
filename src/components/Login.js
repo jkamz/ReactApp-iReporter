@@ -40,12 +40,11 @@ export default class Login extends Component {
       })
   }
 
-  // componentWillMount() {
-  //   if(this.Auth.isLoggedIn()) {
-      
-  //     //this.props.history.replace('/signup')
-  //   }
-  // }
+  componentWillMount() {
+    if(this.Auth.isLoggedIn()) {
+      this.props.history.replace('/')
+    }
+  }
 
   render() {
     return (

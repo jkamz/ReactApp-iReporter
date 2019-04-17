@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import RedFlagList from "./RedflagsMany";
 import AuthHelper from './Auth';
-import styles from "../styles/redflag.css"
+import Authenticated from "./Authenticated";
+import styles from "../styles/redflag.css";
 
 class Redflags extends Component {
 
@@ -36,4 +37,4 @@ class Redflags extends Component {
     }
 }
 
-export default Redflags;
+export default Authenticated(Redflags);
