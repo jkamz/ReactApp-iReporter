@@ -1,0 +1,41 @@
+.rdcard {
+    padding: 15px;
+}
+
+.card-list {
+    display: block;
+    margin: auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1025px;
+    margin: auto;
+  }
+
+.main-content::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  
+@media (min-width: 550px) {
+    .card-list li {
+      float: left;
+      width: 50%;
+      margin: 0;
+    }
+}
+
+@media (min-width: 769px) { 
+    .gif-list li:nth-of-type(3n+1) {
+      clear: left;
+    }
+  }
