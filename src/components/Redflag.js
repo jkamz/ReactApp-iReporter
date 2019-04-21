@@ -28,7 +28,6 @@ class Redflags extends Component {
 
     render() {
 
-        console.log(this.state.redflags)
         return (
             <div className="main-content">
                 <RedFlagList data={this.state.redflags} /> 

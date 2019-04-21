@@ -26,17 +26,15 @@ export default class Login extends Component {
       .then(res => {
         console.log(res)
         if (res == false) {
-            //return alert ("Unsuccessful login, check your credentials")
             this.setState({wrongCreds: true})
         } else {
           if (res.token){
             this.setState({success: true})
           }
+          this.props.history.replace("/");
         }
-        //this.props.history.replace("/");
       })
       .catch(error => {
-        //alert(error)
       })
   }
 
@@ -45,6 +43,7 @@ export default class Login extends Component {
       this.props.history.replace('/')
     }
   }
+
 
   render() {
     return (

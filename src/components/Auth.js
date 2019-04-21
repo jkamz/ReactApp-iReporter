@@ -14,7 +14,6 @@ export default class AuthHelper {
             })
         }).then (res => {
             if (res.message){
-                //alert(res.message)
                 return false;
             } else {
                 this.setToken(res.token);
